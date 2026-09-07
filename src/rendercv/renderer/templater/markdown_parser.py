@@ -183,8 +183,10 @@ def markdown_to_typst(markdown_string: str) -> str:
             while i < len(lines) and lines[i].startswith("    "):
                 block.append(lines[i])
                 i += 1
+            md.reset()
             result_parts.append(md.convert("\n".join(block)))
         else:
+            md.reset()
             line = lines[i]
             leading_whitespace = len(line) - len(line.lstrip())
             converted = md.convert(line.lstrip())
