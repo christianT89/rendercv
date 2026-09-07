@@ -242,6 +242,10 @@ class TestMarkdownToTypst:
     def test_empty_lines_preserved(self):
         result = markdown_to_typst("**bold**\n\n*italic*")
         assert result == "#strong[bold]\n\n#emph[italic]"
+    
+    def test_nested_bullet_indentation_preserved(self):
+        result = markdown_to_typst("- Top level\n  - Nested bullet\n    - Deeply nested")
+        assert result == "- Top level\n  - Nested bullet\n    - Deeply nested"
 
     @settings(deadline=None)
     @given(text=st.text(max_size=300))

@@ -8,7 +8,7 @@ hide:
 
 All notable changes to this project will be documented in this file.
 
-[Click here to see the unreleased changes.](https://github.com/rendercv/rendercv/compare/v2.8...HEAD)
+[Click here to see the unreleased changes.](https://github.com/rendercv/rendercv/compare/v2.8.1...HEAD)
 
 <!--
 ### Added
@@ -16,6 +16,14 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 ### Removed
 -->
+
+## [2.8.1] - Sept 07, 2026
+
+> **Full Changelog**: [v2.8...v2.8.1]
+
+### Fixed
+
+- Nested markdown not working since 2.8 ([#712](https://github.com/rendercv/rendercv/issues/712)).
 
 ## [2.8] - March 21, 2026
 
@@ -704,6 +712,7 @@ The first release of RenderCV.
 [v0.3...v0.4]: https://github.com/rendercv/rendercv/compare/v0.3...v0.4
 [v0.2...v0.3]: https://github.com/rendercv/rendercv/compare/v0.2...v0.3
 [v0.1...v0.2]: https://github.com/rendercv/rendercv/compare/v0.1...v0.2
+[2.8.1]: https://github.com/christianT89/rendercv/releases/tag/v2.8.1
 [2.8]: https://github.com/rendercv/rendercv/releases/tag/v2.8
 [2.7]: https://github.com/rendercv/rendercv/releases/tag/v2.7
 [2.6]: https://github.com/rendercv/rendercv/releases/tag/v2.6
