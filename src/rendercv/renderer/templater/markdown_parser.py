@@ -185,7 +185,10 @@ def markdown_to_typst(markdown_string: str) -> str:
                 i += 1
             result_parts.append(md.convert("\n".join(block)))
         else:
-            result_parts.append(md.convert(lines[i]))
+            line = lines[i]
+            leading_whitespace = len(line) - len(line.lstrip())
+            converted = md.convert(line.lstrip())
+            result_parts.append(line[:leading_whitespace] + converted)
             i += 1
     return "\n".join(result_parts)
 
